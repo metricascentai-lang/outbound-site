@@ -2101,7 +2101,7 @@ function sourcesPage(){
       <div class="sgt">${src.filter(x => x.family === f.key).sort((a,b) => b.records - a.records).map(x => `<span title="${esc(x.gives)} · ${x.records} facts on the desk">${esc(shortName(x.key))}</span>`).join("")}</div></div>`).join("");
   return `
   <div class="crumb">Lead Desk › <b>Data sources</b></div>
-  <div class="head"><div><h1>Where the data comes from</h1><p class="todo-lead" style="color:var(--ink)">${src.length} public sources feed the Lead Engine. Every fact on a buyer links to the page it came from.</p></div></div>
+  <div class="head"><div><h1>Where the data comes from</h1><p class="todo-lead" style="color:var(--ink)">${src.length} public sources. Every fact links to its source.</p></div></div>
   <div class="card bmap">
     <div class="bcolh"><span>${src.length} sources</span><span></span><span>The Lead Engine</span><span></span><span>What you get</span></div>
     <div class="bgrid">
